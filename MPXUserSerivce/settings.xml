@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService xmlns:con="http://eviware.com/soapui/config" id="e0f9a349-0c57-4020-a9ae-9af11fb0daac" port="8090" path="/" host="localhost" name="MPXUserSerivce" routeModeEnabled="true" routeEndpoint="http://data.userprofile.community.theplatform.eu" addUnmatchedOperation="true">
+<con:restMockService xmlns:con="http://eviware.com/soapui/config" id="e0f9a349-0c57-4020-a9ae-9af11fb0daac" port="8090" path="/" host="localhost" name="MPXUserSerivce" routeModeEnabled="false" routeEndpoint="http://data.userprofile.community.theplatform.eu" addUnmatchedOperation="true">
   <con:settings id="063faaf7-f55e-4579-8f0f-8abcf0f0ac0b">
     <con:setting id="e0f9a349-0c57-4020-a9ae-9af11fb0daacfileName">MPXUserSerivce</con:setting>
   </con:settings>

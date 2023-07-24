@@ -3,6 +3,7 @@
   <con:settings id="9de5045e-ff70-4e19-94d7-6c1eb50e9f1e">
     <con:setting id="087226e2-7cbd-4794-bdc1-c8d7664955bcfileName">CreateProfile</con:setting>
   </con:settings>
+  <con:defaultResponse>CreateProfileSuccess</con:defaultResponse>
   <con:dispatchStyle>PARAMETER</con:dispatchStyle>
   <con:dispatchConfig/>
   <con:dispatchXPath/>
@@ -30,12 +31,6 @@
       <con:parameterDispatcherCondition>
         <con:parameterType>QUERY</con:parameterType>
         <con:parameterOperationType>EQUALS</con:parameterOperationType>
-        <con:parameterName>byUsername</con:parameterName>
-        <con:parameterValue>546243623</con:parameterValue>
-      </con:parameterDispatcherCondition>
-      <con:parameterDispatcherCondition>
-        <con:parameterType>QUERY</con:parameterType>
-        <con:parameterOperationType>EQUALS</con:parameterOperationType>
         <con:parameterName>account</con:parameterName>
         <con:parameterValue>http://access.auth.theplatform.com/data/Account/2702652773</con:parameterValue>
       </con:parameterDispatcherCondition>
@@ -45,7 +40,7 @@
         <con:parameterName>token</con:parameterName>
         <con:parameterValue>WzStf0IQn_WKw4-icj168bD8sJCCYNCg</con:parameterValue>
       </con:parameterDispatcherCondition>
-      <con:responseName>For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:responseName>
+      <con:responseName>CreateProfileSuccess</con:responseName>
     </con:ParameterDispatcherRule>
     <con:ParameterDispatcherRule>
       <con:ruleName>schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:ruleName>
@@ -79,7 +74,7 @@
         <con:parameterName>account</con:parameterName>
         <con:parameterValue>http://access.auth.theplatform.com/data/Account/2702652773</con:parameterValue>
       </con:parameterDispatcherCondition>
-      <con:responseName>For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:responseName>
+      <con:responseName>SecurityTokenMissing</con:responseName>
     </con:ParameterDispatcherRule>
     <con:ParameterDispatcherRule>
       <con:ruleName>schema=1.0&amp;form=json&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:ruleName>
@@ -113,7 +108,7 @@
         <con:parameterName>token</con:parameterName>
         <con:parameterValue>WzStf0IQn_WKw4-icj168bD8sJCCYNCg</con:parameterValue>
       </con:parameterDispatcherCondition>
-      <con:responseName>For schema=1.0&amp;form=json&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:responseName>
+      <con:responseName>CreateProfileSuccess</con:responseName>
     </con:ParameterDispatcherRule>
     <con:ParameterDispatcherRule>
       <con:ruleName>schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg</con:ruleName>
@@ -147,7 +142,7 @@
         <con:parameterName>token</con:parameterName>
         <con:parameterValue>WzStf0IQn_WKw4-icj168bD8sJCCYNCg</con:parameterValue>
       </con:parameterDispatcherCondition>
-      <con:responseName>For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg</con:responseName>
+      <con:responseName>UserprofileOwnerIdRequiredError</con:responseName>
     </con:ParameterDispatcherRule>
     <con:ParameterDispatcherRule>
       <con:ruleName>schema=1.0&amp;form=json&amp;byUsername=546243623&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:ruleName>
@@ -177,18 +172,18 @@
       </con:parameterDispatcherCondition>
       <con:parameterDispatcherCondition>
         <con:parameterType>QUERY</con:parameterType>
-        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterOperationType>NOT_EQUALS</con:parameterOperationType>
         <con:parameterName>token</con:parameterName>
         <con:parameterValue>WzStf0IQn_WKw4-icj168bD8sJCCYNCg</con:parameterValue>
       </con:parameterDispatcherCondition>
-      <con:responseName>For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773</con:responseName>
+      <con:responseName>invalidToken</con:responseName>
     </con:ParameterDispatcherRule>
   </con:parameterDispatcherRuleContainer>
   <con:routeEnabled>true</con:routeEnabled>
   <con:conditionalRoutingEnabled>false</con:conditionalRoutingEnabled>
   <con:routeScript/>
   <con:saveRoutedResponse>true</con:saveRoutedResponse>
-  <con:response name="For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773" id="7b863a0d-59a8-42a7-9bfb-58599ce331f2" httpResponseStatus="201" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+  <con:response name="CreateProfileSuccess" id="7b863a0d-59a8-42a7-9bfb-58599ce331f2" httpResponseStatus="201" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
     <con:settings/>
     <con:responseContent>{"$xmlns":{"pl1":"http://access.auth.theplatform.com/data/Account/2702652773","pluserprofile":"http://xml.theplatform.com/userprofile/data/UserProfile"},"id":"http://data.userprofile.community.theplatform.eu/userprofile/data/UserProfile/1093631844","guid":"_jVfg2FvJARTpumlzUIuTSruzu27ORlO","updated":1689753660000,"added":1689753660000,"ownerId":"http://access.auth.theplatform.com/data/Account/2702652773","addedByUserId":"https://identity.auth.theplatform.com/idm/data/User/mpx/2800544","updatedByUserId":"https://identity.auth.theplatform.com/idm/data/User/mpx/2800544","version":0,"locked":false,"pluserprofile$signature":"","pluserprofile$displayName":"","pluserprofile$userId":"https://euid.theplatform.eu/idm/data/User/GdmPrdV6eu77hi3/546308717","pluserprofile$firstName":"skd","pluserprofile$lastName":"sff","pluserprofile$gender":"eyy","pluserprofile$username":"Profile_Active","pluserprofile$email":"dfyui","pluserprofile$website":"","pluserprofile$avatar":null,"pluserprofile$metroCode":0,"pluserprofile$regionCode":"","pluserprofile$postalCode":"","pluserprofile$countryCode":"","pluserprofile$metroName":"Unknown","pluserprofile$regionName":"Unknown","pluserprofile$countryName":"Unknown","pluserprofile$publicDataMap":{},"pluserprofile$privateDataMap":{},"pluserprofile$adminDataMap":{"alternateContactNo":"+966537410654","MSISDN":"+966537410654","purchasePIN":"1234"},"pl1$billingId":"5111714071","pl1$bu":"cbu","pl1$customerId":"7013733474","pl1$emailVerified":false,"pl1$msisdn":"","pl1$msisdnVerified":false,"pl1$operator":"STC","pl1$primaryEmail":"sb@hotmail.com","pl1$primaryMobileNo":"+966537410654","pl1$userStatus":"active"}</con:responseContent>
     <con:header>
@@ -212,7 +207,7 @@
       <con:value>http://localhost:8081/userprofile/data/UserProfile/1093631844</con:value>
     </con:header>
   </con:response>
-  <con:response name="For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;account=http://access.auth.theplatform.com/data/Account/2702652773" id="ac9c5047-6b0d-48ce-b2a6-0bdd43d50292" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+  <con:response name="SecurityTokenMissing" id="ac9c5047-6b0d-48ce-b2a6-0bdd43d50292" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
     <con:settings/>
     <con:responseContent>{"title":"AuthenticationException","description":"Security token is missing from request.","isException":true,"responseCode":401,"correlationId":"a5279a23-4d10-4963-bf7c-c1658a96d081"}</con:responseContent>
     <con:header>
@@ -236,31 +231,7 @@
       <con:value>Mon, 24 Jul 2023 08:15:30 GMT</con:value>
     </con:header>
   </con:response>
-  <con:response name="For schema=1.0&amp;form=json&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773" id="456c53e0-14ad-4c2b-827d-779e538e92b7" httpResponseStatus="201" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
-    <con:settings/>
-    <con:responseContent>{"$xmlns":{"pl1":"http://access.auth.theplatform.com/data/Account/2702652773","pluserprofile":"http://xml.theplatform.com/userprofile/data/UserProfile"},"id":"http://data.userprofile.community.theplatform.eu/userprofile/data/UserProfile/1093631844","guid":"_jVfg2FvJARTpumlzUIuTSruzu27ORlO","updated":1689753660000,"added":1689753660000,"ownerId":"http://access.auth.theplatform.com/data/Account/2702652773","addedByUserId":"https://identity.auth.theplatform.com/idm/data/User/mpx/2800544","updatedByUserId":"https://identity.auth.theplatform.com/idm/data/User/mpx/2800544","version":0,"locked":false,"pluserprofile$signature":"","pluserprofile$displayName":"","pluserprofile$userId":"https://euid.theplatform.eu/idm/data/User/GdmPrdV6eu77hi3/546308717","pluserprofile$firstName":"skd","pluserprofile$lastName":"sff","pluserprofile$gender":"eyy","pluserprofile$username":"Profile_Active","pluserprofile$email":"dfyui","pluserprofile$website":"","pluserprofile$avatar":null,"pluserprofile$metroCode":0,"pluserprofile$regionCode":"","pluserprofile$postalCode":"","pluserprofile$countryCode":"","pluserprofile$metroName":"Unknown","pluserprofile$regionName":"Unknown","pluserprofile$countryName":"Unknown","pluserprofile$publicDataMap":{},"pluserprofile$privateDataMap":{},"pluserprofile$adminDataMap":{"alternateContactNo":"+966537410654","MSISDN":"+966537410654","purchasePIN":"1234"},"pl1$billingId":"5111714071","pl1$bu":"cbu","pl1$customerId":"7013733474","pl1$emailVerified":false,"pl1$msisdn":"","pl1$msisdnVerified":false,"pl1$operator":"STC","pl1$primaryEmail":"sb@hotmail.com","pl1$primaryMobileNo":"+966537410654","pl1$userStatus":"active"}</con:responseContent>
-    <con:header>
-      <con:name>Server</con:name>
-      <con:value>openresty/1.19.9.1</con:value>
-    </con:header>
-    <con:header>
-      <con:name>Access-Control-Allow-Origin</con:name>
-      <con:value>*</con:value>
-    </con:header>
-    <con:header>
-      <con:name>Connection</con:name>
-      <con:value>keep-alive</con:value>
-    </con:header>
-    <con:header>
-      <con:name>Date</con:name>
-      <con:value>Mon, 24 Jul 2023 08:15:43 GMT</con:value>
-    </con:header>
-    <con:header>
-      <con:name>Location</con:name>
-      <con:value>http://localhost:8081/userprofile/data/UserProfile/1093631844</con:value>
-    </con:header>
-  </con:response>
-  <con:response name="For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;pipeline=admin&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg" id="afddd971-7d48-452b-9102-2410872541ac" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+  <con:response name="UserprofileOwnerIdRequiredError" id="afddd971-7d48-452b-9102-2410872541ac" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
     <con:settings/>
     <con:responseContent>{"title":"ValidationException","description":"UserProfile ownerId is required.","isException":true,"responseCode":422,"correlationId":"ae34a264-391f-4082-ac77-9abbccb8c502","serverStackTrace":"com.theplatform.module.exception.ValidationException: UserProfile ownerId is required.\n\tat com.theplatform.data.validation.error.DefaultValidationErrorHandler.handleError(DefaultValidationErrorHandler.java:30)\n\tat com.theplatform.data.validation.ValidationHandler.validate(ValidationHandler.java:108)\n\tat com.theplatform.data.persistence.phase.CreatePersistencePhase.doCreate(CreatePersistencePhase.java:137)\n\tat com.theplatform.data.persistence.phase.CreatePersistencePhase.doExecute(CreatePersistencePhase.java:51)\n\tat com.theplatform.data.persistence.phase.CreatePersistencePhase.doExecute(CreatePersistencePhase.java:31)\n\tat com.theplatform.module.pipeline.Phase.execute(Phase.java:125)\n\tat com.theplatform.data.pipeline.phase.DataServicePhase.execute(DataServicePhase.java:79)\n\tat com.theplatform.data.pipeline.phase.StatusReportingPhase.execute(StatusReportingPhase.java:57)\n\tat com.theplatform.data.pipeline.phase.StatusReportingPhase.execute(StatusReportingPhase.java:18)\n\tat com.theplatform.module.pipeline.thread.PhaseExecution.run(PhaseExecution.java:108)\n\tat com.theplatform.module.pipeline.thread.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:909)\n\tat com.theplatform.module.pipeline.thread.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:931)\n\tat java.lang.Thread.run(Thread.java:748)"}</con:responseContent>
     <con:header>
@@ -284,7 +255,7 @@
       <con:value>Mon, 24 Jul 2023 08:15:57 GMT</con:value>
     </con:header>
   </con:response>
-  <con:response name="For schema=1.0&amp;form=json&amp;byUsername=546243623&amp;token=WzStf0IQn_WKw4-icj168bD8sJCCYNCg&amp;account=http://access.auth.theplatform.com/data/Account/2702652773" id="c63227eb-958d-4652-8843-7c82e6182d34" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+  <con:response name="invalidToken" id="c63227eb-958d-4652-8843-7c82e6182d34" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
     <con:settings/>
     <con:responseContent>{"title":"AuthorizationException","description":"Invalid token","isException":true,"responseCode":403,"correlationId":"c7af14b3-c935-4abe-b1a5-b982914675fd"}</con:responseContent>
     <con:header>

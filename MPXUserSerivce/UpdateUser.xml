@@ -3,7 +3,7 @@
   <con:settings id="4965f8e0-e8aa-4f23-9d1b-35478f639ed6">
     <con:setting id="524df6ca-88c9-47b3-bfba-23484d8f8ddcfileName">UpdateUser</con:setting>
   </con:settings>
-  <con:defaultResponse>For schema=1.0&amp;form=json&amp;account=http://access.auth.theplatform.com/data/Account/2702652773&amp;token=AuyLorUKVIYEw48AEn1CUWCk4OC88OBc</con:defaultResponse>
+  <con:defaultResponse>UpdateUserSuccess</con:defaultResponse>
   <con:dispatchStyle>PARAMETER</con:dispatchStyle>
   <con:dispatchConfig/>
   <con:dispatchXPath/>
@@ -84,7 +84,7 @@
   <con:routeEnabled>true</con:routeEnabled>
   <con:routeScript/>
   <con:saveRoutedResponse>true</con:saveRoutedResponse>
-  <con:response name="For schema=1.0&amp;form=json&amp;account=http://access.auth.theplatform.com/data/Account/2702652773&amp;token=AuyLorUKVIYEw48AEn1CUWCk4OC88OBc" id="653e131a-2d8b-4662-ad08-ccbffc7e43f1" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" dataSource="">
+  <con:response name="UpdateUserSuccess" id="653e131a-2d8b-4662-ad08-ccbffc7e43f1" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" dataSource="">
     <con:settings/>
     <con:responseContent/>
     <con:header>
@@ -104,7 +104,7 @@
       <con:value>Mon, 24 Jul 2023 06:02:56 GMT</con:value>
     </con:header>
   </con:response>
-  <con:response name="For schema=1.0&amp;form=json&amp;account=http://access.auth.theplatform.com/data/Account/2702652773" id="ca82c5af-c5d1-499e-b7d5-3174e85f35c7" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+  <con:response name="TokenMissingError" id="ca82c5af-c5d1-499e-b7d5-3174e85f35c7" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
     <con:settings/>
     <con:responseContent>{"title":"AuthenticationException","description":"Security token is missing from request.","isException":true,"responseCode":401,"correlationId":"ab59958d-ffc7-4e0d-ac8b-47406739b5ba"}</con:responseContent>
     <con:header>
