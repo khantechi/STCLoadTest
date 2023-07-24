@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:restMockService xmlns:con="http://eviware.com/soapui/config" id="f309fd95-0e2c-49c8-b18e-20b3bb08df7a" port="8080" path="/" host="localhost" name="CreateUserAndLogin" routeEndpoint="https://stg-v2-micro-api.intigral-ott.net" routeModeEnabled="true" addUnmatchedOperation="false">
-  <con:settings id="9f55ad04-e661-4ed7-a1ea-38acbd435323">
+  <con:settings id="000d06fe-b963-43d5-8f90-a8d9069fe0f9">
     <con:setting id="f309fd95-0e2c-49c8-b18e-20b3bb08df7afileName">CreateUserAndLogin</con:setting>
   </con:settings>
   <con:properties/>

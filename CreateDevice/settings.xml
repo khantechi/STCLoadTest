@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:restMockService xmlns:con="http://eviware.com/soapui/config" id="62793455-144b-41b7-913e-0339c3937cd3" port="8090" path="/" host="localhost" name="CreateDevice" routeEndpoint="https://stg-v2-micro-api.intigral-ott.net" routeModeEnabled="false">
-  <con:settings id="dc45f399-d088-43ce-ae76-4f28a2fd7303">
+  <con:settings id="72c06119-1077-4ca1-9d74-7306b2b967f7">
     <con:setting id="62793455-144b-41b7-913e-0339c3937cd3fileName">CreateDevice</con:setting>
   </con:settings>
   <con:properties/>

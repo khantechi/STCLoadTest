@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:restMockService xmlns:con="http://eviware.com/soapui/config" id="b0f79a8e-14c1-45c7-9a6c-ccce09128280" port="8081" path="/" host="localhost" name="MPXProfileService" routeModeEnabled="true" routeEndpoint="http://data.userprofile.community.theplatform.eu">
-  <con:settings id="fc0e7f57-bd49-4759-ba83-1936132a1be4">
+  <con:settings id="bcfd2ae5-19bf-4243-a49c-82d3c6095075">
     <con:setting id="b0f79a8e-14c1-45c7-9a6c-ccce09128280fileName">MPXProfileService</con:setting>
   </con:settings>
   <con:properties/>

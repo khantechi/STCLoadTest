@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:restMockService xmlns:con="http://eviware.com/soapui/config" id="293e36d1-ef5f-4a6c-8d8d-6cb3b1c41ef9" port="8092" path="/" host="localhost" name="StreamHarnessService" routeEndpoint="https://stg-micro-v2.intigral-ott.net" routeModeEnabled="false">
-  <con:settings id="b582c94e-54e5-4ed7-970d-519de78de41e">
+  <con:settings id="cc0009f1-bf32-4a84-8d2f-a83de9175783">
     <con:setting id="293e36d1-ef5f-4a6c-8d8d-6cb3b1c41ef9fileName">StreamHarnessService</con:setting>
   </con:settings>
   <con:properties/>
