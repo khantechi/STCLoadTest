@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService xmlns:con="http://eviware.com/soapui/config" id="f309fd95-0e2c-49c8-b18e-20b3bb08df7a" port="8080" path="/" host="localhost" name="CreateUserAndLogin" routeEndpoint="https://stg-v2-micro-api.intigral-ott.net" routeModeEnabled="true" addUnmatchedOperation="false">
+  <con:settings id="9f55ad04-e661-4ed7-a1ea-38acbd435323">
+    <con:setting id="f309fd95-0e2c-49c8-b18e-20b3bb08df7afileName">CreateUserAndLogin</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources>
+    <con:dataSource>
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>5</generatorsTotalNumber>
+          <lastSelectedProperty>2</lastSelectedProperty>
+          <GeneratorType0>EMAIL</GeneratorType0>
+          <PropertyName0>email</PropertyName0>
+          <repetitionCountemail>1</repetitionCountemail>
+          <repeatValuesemail>false</repeatValuesemail>
+          <GeneratorType1>NAME</GeneratorType1>
+          <PropertyName1>name</PropertyName1>
+          <repetitionCountname>0</repetitionCountname>
+          <repeatValuesname>false</repeatValuesname>
+          <NameTypeName1>Full</NameTypeName1>
+          <NameGenderName1>Any</NameGenderName1>
+          <GeneratorType2>STR</GeneratorType2>
+          <PropertyName2>firstname</PropertyName2>
+          <repetitionCountfirstname>0</repetitionCountfirstname>
+          <repeatValuesfirstname>false</repeatValuesfirstname>
+          <PasswordDataGeneratorUseSpacesfirstname>true</PasswordDataGeneratorUseSpacesfirstname>
+          <PasswordDataGeneratorUsePunctuationMarksfirstname>true</PasswordDataGeneratorUsePunctuationMarksfirstname>
+          <PasswordDataGeneratorUseLettersfirstname>true</PasswordDataGeneratorUseLettersfirstname>
+          <PasswordDataGeneratorUseDigitsfirstname>true</PasswordDataGeneratorUseDigitsfirstname>
+          <PasswordDataGeneratorMaxCharacterCountfirstname>10</PasswordDataGeneratorMaxCharacterCountfirstname>
+          <PasswordDataGeneratorMinCharacterCountfirstname>5</PasswordDataGeneratorMinCharacterCountfirstname>
+          <GeneratorType3>STR</GeneratorType3>
+          <PropertyName3>lastname</PropertyName3>
+          <repetitionCountlastname>0</repetitionCountlastname>
+          <repeatValueslastname>false</repeatValueslastname>
+          <PasswordDataGeneratorUseSpaceslastname>true</PasswordDataGeneratorUseSpaceslastname>
+          <PasswordDataGeneratorUsePunctuationMarkslastname>true</PasswordDataGeneratorUsePunctuationMarkslastname>
+          <PasswordDataGeneratorUseLetterslastname>true</PasswordDataGeneratorUseLetterslastname>
+          <PasswordDataGeneratorUseDigitslastname>true</PasswordDataGeneratorUseDigitslastname>
+          <PasswordDataGeneratorMaxCharacterCountlastname>10</PasswordDataGeneratorMaxCharacterCountlastname>
+          <PasswordDataGeneratorMinCharacterCountlastname>5</PasswordDataGeneratorMinCharacterCountlastname>
+          <GeneratorType4>INT</GeneratorType4>
+          <PropertyName4>Numbers</PropertyName4>
+          <repetitionCountNumbers>0</repetitionCountNumbers>
+          <repeatValuesNumbers>false</repeatValuesNumbers>
+          <IntegerDataGeneratorMinValueNumbers>1</IntegerDataGeneratorMinValueNumbers>
+          <IntegerDataGeneratorMaxValueNumbers>100000000</IntegerDataGeneratorMaxValueNumbers>
+          <IntegerDataGeneratorStepValueNumbers>1</IntegerDataGeneratorStepValueNumbers>
+          <IntegerDataGeneratorConsequentValuesNumbers>false</IntegerDataGeneratorConsequentValuesNumbers>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>CreateUserDataSource</con:name>
+      <con:property>email</con:property>
+      <con:property>name</con:property>
+      <con:property>firstname</con:property>
+      <con:property>lastname</con:property>
+      <con:property>Numbers</con:property>
+    </con:dataSource>
+    <con:dataSource>
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>GUID</GeneratorType0>
+          <PropertyName0>transref</PropertyName0>
+          <repetitionCounttransref>0</repetitionCounttransref>
+          <repeatValuestransref>false</repeatValuestransref>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>trasecRef</con:name>
+      <con:property>transref</con:property>
+    </con:dataSource>
+  </con:dataSources>
+  <con:headerValidator type="NONE" customHeader="" customStartsWith=""/>
+</con:restMockService>

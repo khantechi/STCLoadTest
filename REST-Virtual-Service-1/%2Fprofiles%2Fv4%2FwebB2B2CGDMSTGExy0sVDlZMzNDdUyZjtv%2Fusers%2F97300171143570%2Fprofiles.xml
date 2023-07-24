@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/profiles/v4/webB2B2CGDMSTGExy0sVDlZMzNDdUyZjtv/users/97300171143570/profiles" method="GET" resourcePath="/profiles/v4/webB2B2CGDMSTGExy0sVDlZMzNDdUyZjtv/users/97300171143570/profiles" id="78f89260-12d0-41af-84f3-a2b821566263">
+  <con:settings id="b0064a38-6b03-4952-8047-b8bb4bf5abef">
+    <con:setting id="78f89260-12d0-41af-84f3-a2b821566263fileName">%2Fprofiles%2Fv4%2FwebB2B2CGDMSTGExy0sVDlZMzNDdUyZjtv%2Fusers%2F97300171143570%2Fprofiles</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeEnabled>true</con:routeEnabled>
+  <con:routeScript/>
+  <con:saveRoutedResponse>true</con:saveRoutedResponse>
+  <con:response name="Response 1" id="c736358a-d32d-45d4-a6d9-1f3176a74001" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"txRef":"329bb05e-4ec4-4e48-9bb0-5e4ec4be48cd","data":{"profilesLimit":5,"parentalLockOn":false,"profiles":[{"avatar":"#9D5CDD","parentalControl":"R18","defaultAudioLang":"en","passwordProtected":false,"defaultSubTitleLang":"ar","autoPlayNextEpisode":true,"profileName":"default","profileGuid":"_Ue0FcUOh084EOU_0xNpYgxSfhI3XQVl","createdOn":1688455822000,"updatedOn":1688455822000,"kidsDefault":false,"kidsMode":false,"profilePinRequired":false},{"avatar":"#FFDD40","parentalControl":"PG","defaultAudioLang":"en","passwordProtected":false,"defaultSubTitleLang":"ar","autoPlayNextEpisode":false,"profileName":"kids","profileGuid":"CH0ujcq7B9GAWrp0su8WcCQz0tsvsAyY","createdOn":1688455823000,"updatedOn":1688455823000,"kidsDefault":true,"kidsMode":true,"profilePinRequired":false}],"prev":1}}</con:responseContent>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Origin</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Access-Control-Request-Method</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Access-Control-Request-Headers</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 04 Jul 2023 07:30:23 GMT</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>
