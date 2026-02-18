@@ -1,0 +1,35 @@
+name: k6 CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    env:
+      ENV: stg
+      SCENARIO: login_low
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Create reports directory
+        run: mkdir -p reports
+
+      - name: Run k6 smoke scenario
+        run: k6 run tests/main.test.js
+
+      - name: Upload summary report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-summary-html
+          path: reports/summary.html
+          if-no-files-found: warn

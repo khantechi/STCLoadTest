@@ -68,4 +68,9 @@ export const options = {
   scenarios: selectedScenario
     ? { [selectedScenario]: scenarios[selectedScenario] }
     : scenarios,
+  thresholds: {
+    http_req_failed: ['rate<0.05'],
+    checks: ['rate>0.95'],
+    http_req_duration: ['p(95)<1500'],
+  },
 };

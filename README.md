@@ -104,6 +104,11 @@ Runtime selection:
 docker compose up -d influxdb grafana chronograf
 ```
 
+### Run local smoke test (no Influx/Grafana required)
+```bash
+SCENARIO=login_low ENV=stg k6 run tests/main.test.js
+```
+
 ### Run a specific scenario
 ```bash
 SCENARIO=login_load ENV=stg k6 run --out influxdb=http://localhost:8086/k6 tests/main.test.js
@@ -119,7 +124,19 @@ SCENARIO=profile_load ENV=stg k6 run --out influxdb=http://localhost:8086/k6 tes
 - Chronograf: `http://localhost:8888`
 - InfluxDB endpoint: `http://localhost:8086`
 
-## 6. Repository Structure
+## 6. CI (GitHub Actions)
+
+- Workflow file: `.github/workflows/k6-ci.yml`
+- Trigger: pull requests, pushes to `main`, and manual dispatch
+- Default CI run: `SCENARIO=login_low`, `ENV=stg`
+- Quality gates: thresholds from `config/scenarios.js`
+  - `http_req_failed`: `< 5%`
+  - `checks`: `> 95%`
+  - `http_req_duration p(95)`: `< 1500ms`
+
+If any threshold is breached, CI fails.
+
+## 7. Repository Structure
 
 ```text
 config/
@@ -141,7 +158,7 @@ reports/
   summary.html           # generated HTML run report
 ```
 
-## 7. Notes and Best Practices
+## 8. Notes and Best Practices
 
 - Keep scenario names stable because runtime execution depends on `SCENARIO` value.
 - Prefer `constant-arrival-rate` for RPS-oriented tests and `ramping-vus` for concurrency ramp patterns.
