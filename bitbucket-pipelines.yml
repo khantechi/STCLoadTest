@@ -1,0 +1,11 @@
+image: grafana/k6:latest
+
+pipelines:
+  default:
+    - step:
+        name: k6 smoke test
+        script:
+          - mkdir -p reports
+          - ENV=stg SCENARIO=login_low k6 run tests/main.test.js
+        artifacts:
+          - reports/**
